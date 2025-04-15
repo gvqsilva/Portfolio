@@ -4,7 +4,7 @@ import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaPython, FaJava
 import { SiAutodeskmaya } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
 import { TbSql } from "react-icons/tb";
-import CplusImg from '../../public/cplus.png';
+import CplusImg from '/cplus.png';
 
 const SkillsSection = styled.section`
   padding: 5rem 2rem;

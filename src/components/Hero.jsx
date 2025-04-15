@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import Notebook from '../../public/notebook.png'; // ajuste o caminho se necessário
+import Notebook from '/notebook.png'; // ajuste o caminho se necessário
 
 const HeroContainer = styled.section`
   display: flex;

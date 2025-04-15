@@ -132,7 +132,7 @@ function Projects() {
       <ProjectsGrid>
         <CardLink href="https://github.com/gvqsilva/CP5-Edge" target="_blank" rel="noopener noreferrer">
           <Card>
-            <ProjectImage src="./public/projeto1.png" alt="Vinhedos" />
+            <ProjectImage src="/projeto1.png" alt="Vinhedos" />
             <CardContent>
               <ProjectTitle>Monitoramento Global de Vinhedos</ProjectTitle>
               <ProjectDesc>Sistema com ESP32 e sensores que envia dados ao FIWARE. Dashboard em Python permite visualização e análise com controle via Postman.</ProjectDesc>
@@ -143,7 +143,7 @@ function Projects() {
 
         <CardLink href="https://github.com/gvqsilva/GS-Python" target="_blank" rel="noopener noreferrer">
           <Card>
-            <ProjectImage src="./public/projeto2.png" alt="Qualidade da Água" />
+            <ProjectImage src="/projeto2.png" alt="Qualidade da Água" />
             <CardContent>
               <ProjectTitle>Monitoramento da Qualidade da Água</ProjectTitle>
               <ProjectDesc>Projeto criado para o Desafio de Inovação Azul 2024. Analisa dados de poluição oceânica com visualizações acessíveis.</ProjectDesc>
@@ -154,7 +154,7 @@ function Projects() {
 
         <CardLink href="https://g4racing.netlify.app/" target="_blank" rel="noopener noreferrer">
           <Card>
-            <ProjectImage src="./public/projeto3.png" alt="G4 Racing" />
+            <ProjectImage src="/projeto3.png" alt="G4 Racing" />
             <CardContent>
               <ProjectTitle>G4 Racing - Portal Automotivo</ProjectTitle>
               <ProjectDesc>Plataforma completa sobre automobilismo com categorias, notícias, equipes e pilotos. Interface moderna, intuitiva e responsiva.</ProjectDesc>
