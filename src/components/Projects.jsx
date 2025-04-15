@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithub, FaGlobe } from 'react-icons/fa'; // <- Adiciona o FaGlobe
+import { FaGithub, FaGlobe } from 'react-icons/fa';
 
 const ProjectsSection = styled.section`
   padding: 6rem 2rem;
@@ -47,7 +47,7 @@ const CardLink = styled.a`
 
 const Card = styled.div`
   background-color: #2a2a2a;
-  padding: 2rem;
+  padding: 0;
   border-radius: 12px;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -59,6 +59,18 @@ const Card = styled.div`
     transform: translateY(-10px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
   }
+`;
+
+const ProjectImage = styled.img`
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+`;
+
+const CardContent = styled.div`
+  padding: 2rem;
 `;
 
 const ProjectTitle = styled.h3`
@@ -103,7 +115,7 @@ const GithubIcon = styled(FaGithub)`
   }
 `;
 
-const WebIcon = styled(FaGlobe)` // <- Novo ícone estilizado
+const WebIcon = styled(FaGlobe)`
   color: #00df9a;
   font-size: 3rem;
   transition: transform 0.3s ease;
@@ -113,8 +125,6 @@ const WebIcon = styled(FaGlobe)` // <- Novo ícone estilizado
   }
 `;
 
-
-
 function Projects() {
   return (
     <ProjectsSection id="projeto">
@@ -122,26 +132,35 @@ function Projects() {
       <ProjectsGrid>
         <CardLink href="https://github.com/gvqsilva/CP5-Edge" target="_blank" rel="noopener noreferrer">
           <Card>
-            <ProjectTitle>Monitoramento Global de Vinhedos com FIWARE e ESP32</ProjectTitle>
-            <ProjectDesc>Sistema com ESP32 e sensores que envia dados ao FIWARE. Dashboard em Python permite visualização e análise com controle via Postman.</ProjectDesc>
+            <ProjectImage src="./public/projeto1.png" alt="Vinhedos" />
+            <CardContent>
+              <ProjectTitle>Monitoramento Global de Vinhedos</ProjectTitle>
+              <ProjectDesc>Sistema com ESP32 e sensores que envia dados ao FIWARE. Dashboard em Python permite visualização e análise com controle via Postman.</ProjectDesc>
+            </CardContent>
+            <Overlay><GithubIcon /></Overlay>
           </Card>
-          <Overlay><GithubIcon /></Overlay>
         </CardLink>
 
         <CardLink href="https://github.com/gvqsilva/GS-Python" target="_blank" rel="noopener noreferrer">
           <Card>
-            <ProjectTitle>Programa de Monitoramento da Qualidade da Água</ProjectTitle>
-            <ProjectDesc>Projeto criado para o Desafio de Inovação Azul 2024. Analisa dados de poluição oceânica com visualizações acessíveis.</ProjectDesc>
+            <ProjectImage src="./public/projeto2.png" alt="Qualidade da Água" />
+            <CardContent>
+              <ProjectTitle>Monitoramento da Qualidade da Água</ProjectTitle>
+              <ProjectDesc>Projeto criado para o Desafio de Inovação Azul 2024. Analisa dados de poluição oceânica com visualizações acessíveis.</ProjectDesc>
+            </CardContent>
+            <Overlay><GithubIcon /></Overlay>
           </Card>
-          <Overlay><GithubIcon /></Overlay>
         </CardLink>
 
         <CardLink href="https://g4racing.netlify.app/" target="_blank" rel="noopener noreferrer">
           <Card>
-            <ProjectTitle>G4 Racing - O portal do mundo automotivo</ProjectTitle>
-            <ProjectDesc>Plataforma completa e interativa dedicada ao universo do automobilismo, oferecendo cobertura de diversas categorias, notícias atualizadas, perfil de equipes e pilotos, além de uma interface moderna, intuitiva e totalmente responsiva.</ProjectDesc>
+            <ProjectImage src="./public/projeto3.png" alt="G4 Racing" />
+            <CardContent>
+              <ProjectTitle>G4 Racing - Portal Automotivo</ProjectTitle>
+              <ProjectDesc>Plataforma completa sobre automobilismo com categorias, notícias, equipes e pilotos. Interface moderna, intuitiva e responsiva.</ProjectDesc>
+            </CardContent>
+            <Overlay><WebIcon /></Overlay>
           </Card>
-          <Overlay><WebIcon /></Overlay> {/* Aqui usamos o ícone de site */}
         </CardLink>
       </ProjectsGrid>
     </ProjectsSection>
