@@ -107,7 +107,7 @@ function Hero() {
       <TextArea>
         <Hello>HELLO WORLD 👋🏽</Hello>
         <Title>Eu sou Gabriel,</Title>
-        <SubTitle>Desenvolvedor Full-Stack.</SubTitle>
+        <SubTitle>Engenheiro de Software</SubTitle>
       </TextArea>
 
       <ImageArea>

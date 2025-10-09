@@ -141,12 +141,12 @@ function Projects() {
           </Card>
         </CardLink>
 
-        <CardLink href="https://github.com/gvqsilva/GS-Python" target="_blank" rel="noopener noreferrer">
+        <CardLink href="https://github.com/gvqsilva/GymFlow" target="_blank" rel="noopener noreferrer">
           <Card>
             <ProjectImage src="/projeto2.png" alt="Qualidade da Água" />
             <CardContent>
-              <ProjectTitle>Monitoramento da Qualidade da Água</ProjectTitle>
-              <ProjectDesc>Projeto criado para o Desafio de Inovação Azul 2024. Analisa dados de poluição oceânica com visualizações acessíveis.</ProjectDesc>
+              <ProjectTitle>GymFlow - Diário de Atleta Completo</ProjectTitle>
+              <ProjectDesc>Projeto criado para consultar de fichas de treino e ver a suplementação, acabou virando um diário de atleta, para ajudar a monitorar atividades esportivas.</ProjectDesc>
             </CardContent>
             <Overlay><GithubIcon /></Overlay>
           </Card>

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaPython, FaJava } from 'react-icons/fa';
-import { SiAutodeskmaya } from "react-icons/si";
+import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaPython, FaJava} from 'react-icons/fa';
+import { SiAutodeskmaya, SiTypescript, SiPandas } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
-import { TbSql } from "react-icons/tb";
+import { TbSql, TbBrandReactNative } from "react-icons/tb";
 import CplusImg from '/cplus.png';
 
 const SkillsSection = styled.section`
@@ -90,6 +90,10 @@ function Skills() {
         <SkillCard><img src={CplusImg} alt="C++" />C++</SkillCard>
         <SkillCard><FaJava />Java</SkillCard>
         <SkillCard><TbSql />SQL</SkillCard>
+        <SkillCard><SiTypescript />TypeScript</SkillCard>
+        <SkillCard><SiPandas />Pandas</SkillCard>
+        <SkillCard><TbBrandReactNative />React Native</SkillCard>
+        
       </SkillsGrid>
     </SkillsSection>
   );

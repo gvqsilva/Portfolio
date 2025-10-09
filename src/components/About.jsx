@@ -103,7 +103,7 @@ function About() {
       <AboutSection id="sobre">
         <Heading>Sobre Mim</Heading>
         <Text>
-        Estudante de Engenharia de Software na FIAP com base sólida em Python, React, Node.js, JavaScript (full-stack), C++ e cloud (Microsoft Azure), atualmente expandindo seus conhecimentos em Java, SQL e Autodesk Maya. Experiência prática em projetos variados, incluindo colaboração com a Mahindra Racing e desenvolvimento de soluções web, IoT e inovadoras. Habilidades comprovadas em resolução de problemas, integração de tecnologias, criação de dashboards, trabalho em equipe e gestão de projetos. Busca sua primeira experiência profissional focada em Back-end e desafios significativos, demonstrando proatividade no aprendizado e desejo de contribuir para equipes inovadoras e focadas em qualidade.
+        Estudante de Engenharia de Software na FIAP com base sólida em Python, React, Node.js, JavaScript (full-stack), C++ e conhecimento em cloud (Microsoft Azure), atualmente expandindo meus conhecimentos em Java, Oracle SQL, Autodesk Maya, Data Science e Infraestrutura de rede. Experiência prática em projetos pessoais e acadêmicos, incluindo colaboração com a Mahindra Racing e Dasa. Habilidades comprovadas em resolução de problemas, integração de tecnologias, criação de dashboards, trabalho em equipe e gestão de projetos. Busca minha primeira experiência profissional e desafios significativos, demonstrando proatividade no aprendizado e desejo de contribuir para equipes inovadoras e focadas em qualidade. Possuo desejo de atuar futuramente na área de cibersegurança.
         </Text>
       </AboutSection>
   );
