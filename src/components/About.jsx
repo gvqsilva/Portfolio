@@ -104,6 +104,7 @@ function About() {
         <Heading>Sobre Mim</Heading>
         <Text>
         Estudante de Engenharia de Software na FIAP com base sólida em Python, React, Node.js, JavaScript (full-stack), C++ e conhecimento em cloud (Microsoft Azure), atualmente expandindo meus conhecimentos em Java, Oracle SQL, Autodesk Maya, Data Science e Infraestrutura de rede. Experiência prática em projetos pessoais e acadêmicos, incluindo colaboração com a Mahindra Racing e Dasa. Habilidades comprovadas em resolução de problemas, integração de tecnologias, criação de dashboards, trabalho em equipe e gestão de projetos. Busca minha primeira experiência profissional e desafios significativos, demonstrando proatividade no aprendizado e desejo de contribuir para equipes inovadoras e focadas em qualidade. Possuo desejo de atuar futuramente na área de cibersegurança.
+
         </Text>
       </AboutSection>
   );
