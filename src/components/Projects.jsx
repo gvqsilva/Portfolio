@@ -141,7 +141,7 @@ function Projects() {
           </Card>
         </CardLink>
 
-        <CardLink href="https://github.com/gvqsilva/GymFlow" target="_blank" rel="noopener noreferrer">
+        <CardLink href="https://github.com/gvqsilva/GymFlow-" target="_blank" rel="noopener noreferrer">
           <Card>
             <ProjectImage src="/projeto2.png" alt="Qualidade da Água" />
             <CardContent>
