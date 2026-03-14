@@ -2,111 +2,158 @@ import React from 'react';
 import styled from 'styled-components';
 
 const AboutSection = styled.section`
-  padding: 5rem 2rem;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  background: linear-gradient(135deg, rgba(0, 223, 154, 0.15), rgba(44, 44, 44, 0.85));
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: -20%;
-    left: -20%;
-    width: 140%;
-    height: 140%;
-    background: radial-gradient(circle at 30% 30%, rgba(0, 223, 154, 0.3), transparent 70%);
-    animation: pulse 8s infinite ease-in-out;
-    z-index: 0;
-  }
-
-  @keyframes pulse {
-    0%, 100% {
-      transform: scale(1);
-      opacity: 0.5;
-    }
-    50% {
-      transform: scale(1.2);
-      opacity: 0.2;
-    }
-  }
+  padding: 2rem 0;
 
   @media (max-width: 768px) {
-    padding: 4rem 1.5rem;
+    padding: 1rem 0;
   }
 `;
 
-const Heading = styled.h2`
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 600;
-  background: linear-gradient(90deg, #00df9a, #00ffcc);
-  -webkit-background-clip: text;
-  color: transparent;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-out forwards;
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 2rem;
+  align-items: center;
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  @media (max-width: 920px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const Left = styled.div`
+  padding: 0.4rem 0;
+`;
+
+const Right = styled.div`
+  display: grid;
+  gap: 1.1rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -18%;
+    top: 10%;
+    width: 180px;
+    height: 360px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.2));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    filter: blur(0.5px);
+    opacity: 0.55;
+    pointer-events: none;
   }
 
-  @media (max-width: 768px) {
-    font-size: 2.2rem;
+  @media (max-width: 920px) {
+    &::before {
+      display: none;
+    }
+  }
+`;
+
+const Tag = styled.p`
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 223, 154, 0.4);
+  padding: 0.3rem 0.65rem;
+  color: var(--accent);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.9rem;
+`;
+
+const Heading = styled.h2`
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  line-height: 0.97;
+  margin-bottom: 0.8rem;
+  color: var(--text);
+
+  span {
+    color: #e5ebf5;
   }
 `;
 
 const Text = styled.p`
-  max-width: 700px;
-  margin: 0 auto;
-  color: #ddd;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  font-weight: 400;
-  opacity: 0;
-  animation: fadeInText 1.8s ease-out forwards;
-  animation-delay: 0.5s;
+  font-size: 1.02rem;
+  line-height: 1.72;
+  color: #dde2ed;
+  max-width: 58ch;
 
-  @keyframes fadeInText {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  strong {
+    color: #f5f5f5;
+    font-weight: 500;
+  }
+
+  & + & {
+    margin-top: 0.9rem;
   }
 
   @media (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 0.96rem;
+  }
+`;
+
+const Feature = styled.div`
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+
+  h3 {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.92rem;
+    margin-bottom: 0.45rem;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.04em;
+  }
+
+  p {
+    font-size: 0.96rem;
+    line-height: 1.7;
   }
 `;
 
 function About() {
   return (
-      <AboutSection id="sobre">
-        <Heading>Sobre Mim</Heading>
-        <Text>
-        Estudante de Engenharia de Software na FIAP com base sólida em Python, React, Node.js, JavaScript (full-stack), C++ e conhecimento em cloud (Microsoft Azure), atualmente expandindo meus conhecimentos em Java, Oracle SQL, Autodesk Maya, Data Science e Infraestrutura de rede. Experiência prática em projetos pessoais e acadêmicos, incluindo colaboração com a Mahindra Racing e Dasa. Habilidades comprovadas em resolução de problemas, integração de tecnologias, criação de dashboards, trabalho em equipe e gestão de projetos. Busca minha primeira experiência profissional e desafios significativos, demonstrando proatividade no aprendizado e desejo de contribuir para equipes inovadoras e focadas em qualidade. Possuo desejo de atuar futuramente na área de cibersegurança.
+    <AboutSection id="sobre">
+      <Grid>
+        <Left>
+          <Tag>Sobre</Tag>
+          <Heading>
+            Hello World,
+            <span> sou o Gabriel</span>
+          </Heading>
+          <Text>
+            Sou estudante de Engenharia de Software na FIAP, iniciando minha carreira na área de tecnologia. Tenho conhecimentos em diversas linguagens e frameworks de programação.
+          </Text>
+          <Text>
+            Durante minha formação, participei de projetos como uma plataforma interativa em parceria com a Mahindra Racing para divulgar a Fórmula E, competição da FIA, além do Gym Flow, um aplicativo para monitoramento de treinos e suplementação, e iniciativas de automação com o grupo Dasa.
+          </Text>
+          <Text>
+            Busco continuar evoluindo tecnicamente, explorando novas tecnologias e participando de projetos que envolvam desenvolvimento de software, dados, cloud e inovação.
+          </Text>
+        </Left>
 
-        </Text>
-      </AboutSection>
+        <Right>
+          <Feature>
+            <h3>Como eu trabalho</h3>
+            <p>Trabalho com organização e foco na solução de problemas, desenvolvendo código simples e eficiente. Valorizo aprendizado contínuo e boas práticas no desenvolvimento.</p>
+          </Feature>
+          <Feature>
+            <h3>Especialidade</h3>
+            <p>Desenvolvimento web e integração de APIs, com foco em soluções eficientes. Interesse em cloud, dados e cybersecurity.</p>
+          </Feature>
+          <Feature>
+            <h3>Objetivo profissional</h3>
+            <p>Evoluir como desenvolvedor, ampliando meus conhecimentos em software, cloud e dados. Busco participar de projetos desafiadores e criar soluções com impacto real.</p>
+          </Feature>
+        </Right>
+      </Grid>
+    </AboutSection>
   );
 }
 
