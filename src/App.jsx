@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -204,7 +203,6 @@ function App() {
       <ScrollHint type="button" onClick={handleEdgeScroll}>
         {isAtBottom ? 'scroll up' : 'scroll down'}
       </ScrollHint>
-      <Header />
       <Page>
         <Section><Hero /></Section>
         <Section><About /></Section>
