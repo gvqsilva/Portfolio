@@ -119,6 +119,7 @@ const Feature = styled.div`
 
 function About() {
   return (
+<<<<<<< HEAD
     <AboutSection id="sobre">
       <Grid>
         <Left>
@@ -137,6 +138,12 @@ function About() {
             Busco continuar evoluindo tecnicamente, explorando novas tecnologias e participando de projetos que envolvam desenvolvimento de software, dados, cloud e inovação.
           </Text>
         </Left>
+=======
+      <AboutSection id="sobre">
+        <Heading>Sobre Mim</Heading>
+        <Text>
+        Sou estudante de Engenharia de Software na FIAP e estou iniciando minha carreira na área de tecnologia. Tenho experiência com Python, React, Node.js, JavaScript, C++, Java, TypeScript, Oracle SQL, Azure, Postman, Docker e conceitos de Data Science. Ao longo da formação, desenvolvi projetos que ampliaram minha visão prática do desenvolvimento, com destaque para a parceria com a Mahindra Racing, onde criei uma plataforma interativa para aproximar o público da Fórmula E, aplicando UX, front-end e integração de dados. Também participei de iniciativas na Dasa voltadas à automação de processos internos e desenvolvi um aplicativo pessoal em React Native para monitoramento de treinos e suplementação. Esses desafios fortaleceram minhas habilidades técnicas, meu raciocínio analítico e minha capacidade de criar soluções completas. Estou em busca da minha primeira oportunidade profissional e motivado a contribuir com equipes que valorizam inovação, aprendizado contínuo e tecnologia de impacto.
+>>>>>>> bc79ff98d60d4c241935dc406623c9591701dc53
 
         <Right>
           <Feature>

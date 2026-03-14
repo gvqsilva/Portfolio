@@ -515,6 +515,7 @@ function Projects() {
 
   return (
     <ProjectsSection id="projeto">
+<<<<<<< HEAD
       <ProjectsGrid id="projeto-carousel" ref={trackRef}>
         <StickyFrame>
           <FadeSwap key={activeIndex} $direction={direction}>
@@ -559,6 +560,42 @@ function Projects() {
             )}
           </FadeSwap>
         </StickyFrame>
+=======
+      <Heading>Conheça alguns dos meus projetos:</Heading>
+      <ProjectsGrid>
+        <CardLink href="https://github.com/gvqsilva/CP5-Edge" target="_blank" rel="noopener noreferrer">
+          <Card>
+            <ProjectImage src="/projeto1.png" alt="Vinhedos" />
+            <CardContent>
+              <ProjectTitle>Monitoramento Global de Vinhedos</ProjectTitle>
+              <ProjectDesc>Sistema com ESP32 e sensores que envia dados ao FIWARE. Dashboard em Python permite visualização e análise com controle via Postman.</ProjectDesc>
+            </CardContent>
+            <Overlay><GithubIcon /></Overlay>
+          </Card>
+        </CardLink>
+
+        <CardLink href="https://github.com/gvqsilva/GymFlow-" target="_blank" rel="noopener noreferrer">
+          <Card>
+            <ProjectImage src="/projeto2.png" alt="Qualidade da Água" />
+            <CardContent>
+              <ProjectTitle>GymFlow - Diário de Atleta Completo</ProjectTitle>
+              <ProjectDesc>Projeto criado para consultar de fichas de treino e ver a suplementação, acabou virando um diário de atleta, para ajudar a monitorar atividades esportivas.</ProjectDesc>
+            </CardContent>
+            <Overlay><GithubIcon /></Overlay>
+          </Card>
+        </CardLink>
+
+        <CardLink href="https://g4racing.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <Card>
+            <ProjectImage src="/projeto3.png" alt="G4 Racing" />
+            <CardContent>
+              <ProjectTitle>G4 Racing - Portal Automotivo</ProjectTitle>
+              <ProjectDesc>Plataforma completa sobre automobilismo com categorias, notícias, equipes e pilotos. Interface moderna, intuitiva e responsiva.</ProjectDesc>
+            </CardContent>
+            <Overlay><WebIcon /></Overlay>
+          </Card>
+        </CardLink>
+>>>>>>> bc79ff98d60d4c241935dc406623c9591701dc53
       </ProjectsGrid>
       <Counter>{String(activeIndex + 1).padStart(2, '0')} / {String(carouselItems.length).padStart(2, '0')}</Counter>
       <ProgressBar>
